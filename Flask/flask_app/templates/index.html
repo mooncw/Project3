@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8"/>  
+        <title>Cardio</title>
+    </head>
+    <body>
+        <form action="./result/">
+            <fieldset style="width:650px;">
+                <legend style="font-size: 2em;">개인정보입력</legend>
+                나이:
+                <input type="text" name="age" style="width:200px;"><br><br>
+
+                키:
+                <input type="text" name="height" style="width:200px;"><br><br>
+
+                몸무게:
+                <input type="text" name="weight" style="width:200px;"><br><br>
+
+                성별:
+                <input type="radio" name="gender" value="2">
+                <label>남자</label>
+                <input type="radio" name="gender" value="1">
+                <label>여자</label><br><br>
+
+                수축기 혈압:
+                <input type="text" name="ap_hi" style="width:200px;" placeholder="큰 숫자">
+
+                이완기 혈압:
+                <input type="text" name="ap_lo" style="width:200px;" placeholder="작은 숫자"><br><br>
+
+                콜레스테롤 수치:
+                <select name="cholesterol">
+                  <option value="1">양호(200mg/dl이하)</option>
+                  <option value="2">주의(200~239mg/dl)</option>
+                  <option value="3">이상(240mg/dl이상)</option>
+                </select><br><br>
+
+                혈당 수치:
+                <select name="gluc">
+                  <option value="1">양호(70~99mg/dl)</option>
+                  <option value="2">주의(100~125mg/dl)</option>
+                  <option value="3">이상(126mg/dl이상)</option>
+                </select><br><br>
+
+                담배:
+                <input type="radio" name="smoke" value="1">
+                <label>핌</label>
+                <input type="radio" name="smoke" value="0">
+                <label>안핌</label><br><br>
+
+                술:
+                <input  type="radio" name="alco" value="1">
+                <label>마심</label>
+                <input type="radio" name="alco" value="0">
+                <label>안마심</label><br><br>
+
+                운동:
+                <input type="radio" name="active" value="1">
+                <label>함</label>
+                <input type="radio" name="active" value="0">
+                <label>안함</label><br><br>
+
+                <input type="submit" value="제출">
+            </fieldset>
+        </form>
+    </body>
+</html>
